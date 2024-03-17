@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro'
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import SocialPill from '../components/SocialPill.astro'
+import GithubIcon from '../components/icons/GithubIcon.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Briefcase from '../components/Briefcase.astro'
+import Code from '../components/icons/Code.astro'
+---
+
+<Layout title="Astro Porfolio">
+	<main class="px-5">
+		<SectionContainer class="py-44 pb-20">
+			<img class="rounded-full w-12 h-12 mb-5" 
+    			src="data:image/jpeg;base64,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" 
+    			alt="lui"
+			/>
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hey, soy Lui 
+				<a
+				href="https://www.linkedin.com/in/luis-ramos-a149082a8/" 
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center">
+					<Badge>Junior Onboarding Developer</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80 text-wrap">
+				+1 año de experiencia en Database Administration y Backend Development.
+				Entusiasta de la administraciòn de servidores, Despliegue de Aplicaciones, 
+				Arquitectura en la nube, Cloud Digital Leader y DevOps Specialist.
+			</h2>
+				<nav class="flex gap-x-2 mt-8">
+					<SocialPill href="https://www.linkedin.com/in/luis-ramos-a149082a8/" >
+						<LinkedInIcon class="w-6 h-6" />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/NoCap940">
+						<GithubIcon class="w-6 h-6" />
+						Github
+					</SocialPill>
+				</nav>
+		</SectionContainer>
+			
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold mb-6 flex justify-center gap-x-2 items-center">
+				<Briefcase class="size-6"/>
+				Proffesional Experience
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-2xl font-semibold mb-6 flex justify-center gap-x-2 items-center">
+				<Code class="size-6"/>
+				Proyectos
+			</h2>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
+
