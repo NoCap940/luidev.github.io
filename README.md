@@ -1,5 +1,5 @@
 #  💼📋**Porfolio Web** 💼📋
-Hola, en esta rama del repositorio estoy desarrolando mi propio portafolio web.
+Hola, en esta rama del repositorio estoy desarrollando mi propio portafolio web.
 
 
 #  🌐Tecnologías🌐
@@ -13,6 +13,7 @@ Para el desarrollo de mi porfolio, se usan estas herramientas:
  - TailwindCSS [**CSS para el proyecto**]
 
 **Overview**
+Miralo en el siguiente enlace: https://main--glowing-youtiao-0fffdc.netlify.app/
 
 <img width="550" alt="PortfolioLui" src="https://github.com/NoCap940/env_testing/assets/125859534/0d5d8a5c-54e7-4620-a78c-3e4a74d2991b">
 
