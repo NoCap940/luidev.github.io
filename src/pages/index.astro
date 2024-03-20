@@ -9,6 +9,7 @@ import SectionContainer from '../components/SectionContainer.astro'
 import Briefcase from '../components/Briefcase.astro'
 import Code from '../components/icons/Code.astro'
 import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro'
 ---
 
 <Layout title="Astro Porfolio">
@@ -60,6 +61,14 @@ import Projects from '../components/Projects.astro';
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="skills">
+			<h2 class="text-2xl font-semibold mb-6 flex justify-center gap-x-2 items-center">
+				<Code class="size-6"/>
+				Skills 
+				<Skills />
+			</h2>
 		</SectionContainer>
 	</main>
 </Layout>
