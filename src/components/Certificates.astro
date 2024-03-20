@@ -1,5 +1,23 @@
-<h2 class="text-2xl font-semibold mb-6 flex justify-center gap-x-2 items-center">
-    <li>
-        Certificado 1
-    </li>
-</h2>
+---
+import CertificatesItem from "./CertificatesItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo 10 2024",
+    title: "Administracion de Servidores",
+    company: "Platzi",
+    description:
+      "Realize un ruta de cursos especificos orientados a la administracion de servidores con sistemas operativos de libre distribucion Linux, especificamente en administrar recursos, tareas, gestion de sistema.",
+    link: "_blank",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <CertificatesItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
