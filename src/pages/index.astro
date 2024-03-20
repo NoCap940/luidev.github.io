@@ -13,6 +13,10 @@ import Skills from '../components/Skills.astro'
 import Certificates from '../components/Certificates.astro'
 import Certificate from '../components/icons/Certifcate.astro'
 import Skill from '../components/icons/Skill.astro' 
+import ListSkills from '../components/ListSkills.astro'
+import SQLicon from '../IconSkills/SQLicon.astro'
+import Github from '../IconSkills/Github.astro'
+import AstroIcon from '../IconSkills/AstroIcon.astro'
 ---
 
 <Layout title="Astro Porfolio">
@@ -71,6 +75,20 @@ import Skill from '../components/icons/Skill.astro'
 				<Skill class="size-6"/>
 				Skills 
 			</h2>
+				<nav class="flex gap-x-2 mt-8 items-center justify-center pb-10">
+					<ListSkills>
+						<SQLicon class="w-6 h-6"/>
+						SQL
+					</ListSkills>
+					<ListSkills>
+						<Github class="w-6 h-6"/>
+						Git
+					</ListSkills>
+					<ListSkills>
+						<AstroIcon class="w-6 h-6"/>
+						Astro
+					</ListSkills>
+				</nav>
 			<Skills />
 		</SectionContainer>
 
@@ -81,6 +99,9 @@ import Skill from '../components/icons/Skill.astro'
 			</h2>
 			<Certificates />
 		</SectionContainer>
+
+
+	</main>
 	</main>
 </Layout>
 
